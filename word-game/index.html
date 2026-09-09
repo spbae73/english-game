@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>단어 매칭 게임 — Red-Headed League</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>단어 매칭 게임</h1>
+    <p class="byline">The Red-Headed League 단어장 · <span id="wcount"></span>개 단어</p>
+  </header>
+
+  <div id="setup" class="card">
+    <div class="lab">몇 쌍으로 할까요?</div>
+    <div class="pickrow">
+      <button class="pick" data-n="6">6쌍<span class="best" id="best-6"></span></button>
+      <button class="pick" data-n="8">8쌍<span class="best" id="best-8"></span></button>
+      <button class="pick" data-n="12">12쌍<span class="best" id="best-12"></span></button>
+    </div>
+    <p class="hint">영어 카드와 뜻 카드를 뒤집어 짝을 맞춥니다.</p>
+  </div>
+
+  <div id="game" class="hidden">
+    <div class="meta">
+      <span id="progress"></span>
+      <span id="stats"></span>
+    </div>
+    <div id="board" class="board"></div>
+    <button id="reshuffle" class="full ghost">그만하고 다시 고르기</button>
+  </div>
+
+  <div id="done" class="card hidden">
+    <div class="word" id="doneTitle"></div>
+    <div class="gloss" id="doneStats"></div>
+    <div class="gloss" id="doneBest"></div>
+    <button class="full" id="again">같은 판수로 다시</button>
+    <button class="full ghost" id="toSetup">쌍 수 다시 고르기</button>
+  </div>
+
+  <p class="foot">기록은 이 브라우저에 저장됩니다.<br>새 대목이 추가되면 단어도 자동으로 늘어납니다.</p>
+</div>
+
+<script src="words.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

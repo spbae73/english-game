@@ -1,0 +1,1342 @@
+// Red-Headed League 단어장 데이터 — red-headed-league.html의 dict에서 생성
+// 대목이 늘어날 때마다 이 파일도 함께 갱신합니다.
+var WORDS = [
+ {
+  "en": "abruptly",
+  "pos": "부",
+  "ko": "불쑥, 갑작스럽게",
+  "ipa": "əˈbrʌptli"
+ },
+ {
+  "en": "account",
+  "pos": "명",
+  "ko": "~때문에",
+  "ipa": "əˈkaʊnt"
+ },
+ {
+  "en": "acknowledges",
+  "pos": "동",
+  "ko": "인정하다",
+  "ipa": "ækˈnɑlɪdʒɪz"
+ },
+ {
+  "en": "addition",
+  "pos": "명",
+  "ko": "게다가",
+  "ipa": "əˈdɪʃən"
+ },
+ {
+  "en": "adventures",
+  "pos": "명",
+  "ko": "모험",
+  "ipa": "ædˈvɛntʃərz"
+ },
+ {
+  "en": "advertisement",
+  "pos": "명",
+  "ko": "광고",
+  "ipa": "ædˈvɜrtəzmənt"
+ },
+ {
+  "en": "affair",
+  "pos": "명",
+  "ko": "일, 사업",
+  "ipa": "əˈfɛr"
+ },
+ {
+  "en": "afraid",
+  "pos": "형",
+  "ko": "~인 줄 알고 걱정하는",
+  "ipa": "əˈfreɪd"
+ },
+ {
+  "en": "age",
+  "pos": "명",
+  "ko": "시대",
+  "ipa": "ˈeɪdʒ"
+ },
+ {
+  "en": "announcement",
+  "pos": "명",
+  "ko": "광고문, 공고",
+  "ipa": "əˈnaʊnsmənt"
+ },
+ {
+  "en": "answered",
+  "pos": "동",
+  "ko": "대답하다",
+  "ipa": "ˈænsərd"
+ },
+ {
+  "en": "apology",
+  "pos": "명",
+  "ko": "사과",
+  "ipa": "əˈpɑlədʒi"
+ },
+ {
+  "en": "apply",
+  "pos": "동",
+  "ko": "지원하다, 신청하다",
+  "ipa": "əˈplaɪ"
+ },
+ {
+  "en": "assistants",
+  "pos": "명",
+  "ko": "조수",
+  "ipa": "əˈsɪstənts"
+ },
+ {
+  "en": "autumn",
+  "pos": "명",
+  "ko": "가을",
+  "ipa": "ˈɔtəm"
+ },
+ {
+  "en": "baggy",
+  "pos": "형",
+  "ko": "헐렁한",
+  "ipa": "ˈbægi"
+ },
+ {
+  "en": "bequest",
+  "pos": "명",
+  "ko": "유증, 유산",
+  "ipa": "bɪˈkwɛst"
+ },
+ {
+  "en": "berths",
+  "pos": "명",
+  "ko": "편한 일자리",
+  "ipa": "ˈbərθs"
+ },
+ {
+  "en": "better",
+  "pos": "동",
+  "ko": "자기 처지를 향상시키다",
+  "ipa": "ˈbɛtər"
+ },
+ {
+  "en": "beyond",
+  "pos": "전",
+  "ko": "~외에는, ~을 넘어서",
+  "ipa": "bɪˈɑnd"
+ },
+ {
+  "en": "bizarre",
+  "pos": "형",
+  "ko": "기이한",
+  "ipa": "bəˈzɑr"
+ },
+ {
+  "en": "blazing",
+  "pos": "형",
+  "ko": "활활 타오르는",
+  "ipa": "ˈbleɪzɪŋ"
+ },
+ {
+  "en": "bore",
+  "pos": "동",
+  "ko": "지니고 있었다",
+  "ipa": "ˈbɔr"
+ },
+ {
+  "en": "brassy",
+  "pos": "형",
+  "ko": "놋쇠로 된",
+  "ipa": "ˈbræsi"
+ },
+ {
+  "en": "breastpin",
+  "pos": "명",
+  "ko": "브로치, 가슴에 다는 핀",
+  "ipa": "ˈbrɛstpɪn"
+ },
+ {
+  "en": "called",
+  "pos": "동",
+  "ko": "~를 찾아가다",
+  "ipa": "ˈkɔld"
+ },
+ {
+  "en": "candid",
+  "pos": "형",
+  "ko": "솔직한",
+  "ipa": "ˈkændəd"
+ },
+ {
+  "en": "carpenter",
+  "pos": "명",
+  "ko": "목수",
+  "ipa": "ˈkɑrpəntər"
+ },
+ {
+  "en": "cellar",
+  "pos": "명",
+  "ko": "지하실",
+  "ipa": "ˈsɛlər"
+ },
+ {
+  "en": "certainly",
+  "pos": "부",
+  "ko": "분명히",
+  "ipa": "ˈsɜrtənli"
+ },
+ {
+  "en": "chagrin",
+  "pos": "명",
+  "ko": "분함, 원통함",
+  "ipa": "ʃəˈgrɪn"
+ },
+ {
+  "en": "chronicle",
+  "pos": "동",
+  "ko": "기록으로 남기다",
+  "ipa": "ˈkrɑnɪkəl"
+ },
+ {
+  "en": "chuckled",
+  "pos": "동",
+  "ko": "킬킬 웃다",
+  "ipa": "ˈtʃʌkəld"
+ },
+ {
+  "en": "clever",
+  "pos": "형",
+  "ko": "영리한, 똑똑한",
+  "ipa": "ˈklɛvər"
+ },
+ {
+  "en": "colour",
+  "pos": "명",
+  "ko": "색깔(영국식 철자, color)",
+  "ipa": "ˈkʌlər"
+ },
+ {
+  "en": "column",
+  "pos": "명",
+  "ko": "(신문의) 난, 칼럼",
+  "ipa": "ˈkɑləm"
+ },
+ {
+  "en": "combinations",
+  "pos": "명",
+  "ko": "조합",
+  "ipa": "kɑmbəˈneɪʃənz"
+ },
+ {
+  "en": "committed",
+  "pos": "동",
+  "ko": "저지르다",
+  "ipa": "kəˈmɪtɪd"
+ },
+ {
+  "en": "commonplace",
+  "pos": "형",
+  "ko": "평범한",
+  "ipa": "ˈkɑmənpleɪs"
+ },
+ {
+  "en": "confined",
+  "pos": "동",
+  "ko": "국한되다, 제한되다",
+  "ipa": "kənˈfaɪnd"
+ },
+ {
+  "en": "connected",
+  "pos": "동",
+  "ko": "얽혀 있는",
+  "ipa": "kəˈnɛktɪd"
+ },
+ {
+  "en": "contributed",
+  "pos": "동",
+  "ko": "기여하다, 글을 보태다",
+  "ipa": "kənˈtrɪbjutɪd"
+ },
+ {
+  "en": "conventions",
+  "pos": "명",
+  "ko": "관습, 관례",
+  "ipa": "kənˈvɛnʃənz"
+ },
+ {
+  "en": "conversation",
+  "pos": "명",
+  "ko": "대화",
+  "ipa": "kɑnvərˈseɪʃən"
+ },
+ {
+  "en": "cordially",
+  "pos": "부",
+  "ko": "다정하게",
+  "ipa": "ˈkɔrdʒəli"
+ },
+ {
+  "en": "course",
+  "pos": "명",
+  "ko": "경과, 흐름",
+  "ipa": "ˈkɔrs"
+ },
+ {
+  "en": "crib",
+  "pos": "명",
+  "ko": "일자리, 자리",
+  "ipa": "ˈkrɪb"
+ },
+ {
+  "en": "crimes",
+  "pos": "명",
+  "ko": "범죄",
+  "ipa": "ˈkraɪmz"
+ },
+ {
+  "en": "cuff",
+  "pos": "명",
+  "ko": "소맷부리",
+  "ipa": "ˈkʌf"
+ },
+ {
+  "en": "custom",
+  "pos": "명",
+  "ko": "버릇, 습관",
+  "ipa": "ˈkʌstəm"
+ },
+ {
+  "en": "dangling",
+  "pos": "동",
+  "ko": "매달려 늘어지다",
+  "ipa": "ˈdæŋgəlɪŋ"
+ },
+ {
+  "en": "daring",
+  "pos": "형",
+  "ko": "대담한",
+  "ipa": "ˈdɛrɪŋ"
+ },
+ {
+  "en": "debts",
+  "pos": "명",
+  "ko": "빚",
+  "ipa": "ˈdɛts"
+ },
+ {
+  "en": "deduce",
+  "pos": "동",
+  "ko": "추리해내다",
+  "ipa": "dɪˈdus"
+ },
+ {
+  "en": "delicate",
+  "pos": "형",
+  "ko": "은은한, 섬세한",
+  "ipa": "ˈdɛləkət"
+ },
+ {
+  "en": "develop",
+  "pos": "동",
+  "ko": "(사진을) 현상하다",
+  "ipa": "dɪˈvɛləp"
+ },
+ {
+  "en": "discontent",
+  "pos": "명",
+  "ko": "불만",
+  "ipa": "dɪskənˈtɛnt"
+ },
+ {
+  "en": "doubt",
+  "pos": "명",
+  "ko": "의심",
+  "ipa": "ˈdaʊt"
+ },
+ {
+  "en": "doubting",
+  "pos": "동",
+  "ko": "의심하기",
+  "ipa": "ˈdaʊtɪŋ"
+ },
+ {
+  "en": "drab",
+  "pos": "형",
+  "ko": "칙칙한 갈색의",
+  "ipa": "ˈdræb"
+ },
+ {
+  "en": "effects",
+  "pos": "명",
+  "ko": "결과, 효과",
+  "ipa": "ɪˈfɛkts"
+ },
+ {
+  "en": "effort",
+  "pos": "명",
+  "ko": "산물, 노력의 결과",
+  "ipa": "ˈɛfərt"
+ },
+ {
+  "en": "ejaculated",
+  "pos": "동",
+  "ko": "(옛 표현) 소리쳐 말하다, 외치다",
+  "ipa": "ɪˈdʒækjuleɪtɪd"
+ },
+ {
+  "en": "elbow",
+  "pos": "명",
+  "ko": "팔꿈치",
+  "ipa": "ˈɛlboʊ"
+ },
+ {
+  "en": "elderly",
+  "pos": "형",
+  "ko": "나이 지긋한",
+  "ipa": "ˈɛldərli"
+ },
+ {
+  "en": "eligible",
+  "pos": "형",
+  "ko": "자격이 있는",
+  "ipa": "ˈɛlədʒəbəl"
+ },
+ {
+  "en": "embellish",
+  "pos": "동",
+  "ko": "살을 붙여 부풀리다",
+  "ipa": "ɪmˈbɛlɪʃ"
+ },
+ {
+  "en": "employ",
+  "pos": "명",
+  "ko": "피고용인, 직원",
+  "ipa": "ɛmˈplɔɪi"
+ },
+ {
+  "en": "employers",
+  "pos": "명",
+  "ko": "고용주",
+  "ipa": "ɛmˈplɔɪərz"
+ },
+ {
+  "en": "endeavoured",
+  "pos": "동",
+  "ko": "애쓰다, 시도하다",
+  "ipa": "ɪnˈdɛvərd"
+ },
+ {
+  "en": "engaged",
+  "pos": "형",
+  "ko": "볼일이 있어 바쁜",
+  "ipa": "ɛnˈgeɪdʒd"
+ },
+ {
+  "en": "enormous",
+  "pos": "형",
+  "ko": "막대한, 거대한",
+  "ipa": "ɪˈnɔrməs"
+ },
+ {
+  "en": "enthusiasm",
+  "pos": "명",
+  "ko": "열의",
+  "ipa": "ɪnˈθuziæzəm"
+ },
+ {
+  "en": "entitles",
+  "pos": "동",
+  "ko": "~에게 자격을 주다",
+  "ipa": "ɛnˈtaɪtəlz"
+ },
+ {
+  "en": "especially",
+  "pos": "부",
+  "ko": "특히",
+  "ipa": "əˈspɛʃli"
+ },
+ {
+  "en": "events",
+  "pos": "명",
+  "ko": "일, 사건",
+  "ipa": "ɪˈvɛnts"
+ },
+ {
+  "en": "experience",
+  "pos": "명",
+  "ko": "경험",
+  "ipa": "ɪkˈspɪriəns"
+ },
+ {
+  "en": "explaining",
+  "pos": "동",
+  "ko": "설명하다",
+  "ipa": "ɪkˈspleɪnɪŋ"
+ },
+ {
+  "en": "extraordinary",
+  "pos": "형",
+  "ko": "놀라운, 비범한",
+  "ipa": "ɛkstrəˈɔrdənɛri"
+ },
+ {
+  "en": "faults",
+  "pos": "명",
+  "ko": "흠, 결점",
+  "ipa": "ˈfɔlts"
+ },
+ {
+  "en": "features",
+  "pos": "명",
+  "ko": "이목구비, 생김새",
+  "ipa": "ˈfitʃərz"
+ },
+ {
+  "en": "fellow",
+  "pos": "명",
+  "ko": "녀석, 친구",
+  "ipa": "ˈfɛloʊ"
+ },
+ {
+  "en": "fiery",
+  "pos": "형",
+  "ko": "불타는 듯한",
+  "ipa": "ˈfaɪəri"
+ },
+ {
+  "en": "fingertips",
+  "pos": "명",
+  "ko": "손끝",
+  "ipa": "ˈfɪŋgərtɪps"
+ },
+ {
+  "en": "florid-faced",
+  "pos": "형",
+  "ko": "얼굴이 불그레한",
+  "ipa": "ˈflɔrəd‧ˈfeɪst"
+ },
+ {
+  "en": "forefinger",
+  "pos": "명",
+  "ko": "집게손가락",
+  "ipa": "ˈfɔrfɪŋgər"
+ },
+ {
+  "en": "forehead",
+  "pos": "명",
+  "ko": "이마",
+  "ipa": "ˈfɔrhɛd"
+ },
+ {
+  "en": "fortunate",
+  "pos": "형",
+  "ko": "운 좋은",
+  "ipa": "ˈfɔrtʃənət"
+ },
+ {
+  "en": "fortune",
+  "pos": "명",
+  "ko": "운, 행운",
+  "ipa": "ˈfɔrtʃən"
+ },
+ {
+  "en": "fortunes",
+  "pos": "명",
+  "ko": "운, 형편",
+  "ipa": "ˈfɔrtʃənz"
+ },
+ {
+  "en": "frayed",
+  "pos": "형",
+  "ko": "닳아 해진",
+  "ipa": "ˈfreɪd"
+ },
+ {
+  "en": "Freemason",
+  "pos": "명",
+  "ko": "프리메이슨(비밀 공제조합원)",
+  "ipa": "ˈfrimeɪsən"
+ },
+ {
+  "en": "frock-coat",
+  "pos": "명",
+  "ko": "프록코트(예복용 긴 상의)",
+  "ipa": "ˈfrɑk‧ˈkoʊt"
+ },
+ {
+  "en": "gentleman",
+  "pos": "명",
+  "ko": "신사, 이분",
+  "ipa": "ˈdʒɛntəlmən"
+ },
+ {
+  "en": "glances",
+  "pos": "명",
+  "ko": "곁눈질, 흘낏 봄",
+  "ipa": "ˈglænsɪz"
+ },
+ {
+  "en": "gospel",
+  "pos": "명",
+  "ko": "복음",
+  "ipa": "ˈgɑspəl"
+ },
+ {
+  "en": "greatcoat",
+  "pos": "명",
+  "ko": "긴 외투",
+  "ipa": "ˈgreɪtkoʊt"
+ },
+ {
+  "en": "grown",
+  "pos": "형",
+  "ko": "다 자란, 성인의",
+  "ipa": "ˈgroʊn"
+ },
+ {
+  "en": "habit",
+  "pos": "명",
+  "ko": "습관",
+  "ipa": "ˈhæbət"
+ },
+ {
+  "en": "hanging",
+  "pos": "동",
+  "ko": "매달려 있다",
+  "ipa": "ˈhæŋɪŋ"
+ },
+ {
+  "en": "heavily",
+  "pos": "부",
+  "ko": "크게, 세게",
+  "ipa": "ˈhɛvəli"
+ },
+ {
+  "en": "helper",
+  "pos": "명",
+  "ko": "조력자",
+  "ipa": "ˈhɛlpər"
+ },
+ {
+  "en": "household",
+  "pos": "명",
+  "ko": "가족, 가정",
+  "ipa": "ˈhaʊshoʊld"
+ },
+ {
+  "en": "humdrum",
+  "pos": "형",
+  "ko": "따분하고 단조로운",
+  "ipa": "ˈhʌmdrʌm"
+ },
+ {
+  "en": "imagination",
+  "pos": "명",
+  "ko": "상상력",
+  "ipa": "ɪmædʒəˈneɪʃən"
+ },
+ {
+  "en": "improving",
+  "pos": "동",
+  "ko": "향상시키다",
+  "ipa": "ɪmˈpruvɪŋ"
+ },
+ {
+  "en": "indeed",
+  "pos": "부",
+  "ko": "정말로",
+  "ipa": "ɪnˈdid"
+ },
+ {
+  "en": "indicated",
+  "pos": "동",
+  "ko": "나타내다, 보여주다",
+  "ipa": "ˈɪndəkeɪtəd"
+ },
+ {
+  "en": "indications",
+  "pos": "명",
+  "ko": "단서, 표시",
+  "ipa": "ɪndəˈkeɪʃənz"
+ },
+ {
+  "en": "inspection",
+  "pos": "명",
+  "ko": "살펴봄, 관찰",
+  "ipa": "ɪnˈspɛkʃən"
+ },
+ {
+  "en": "instance",
+  "pos": "명",
+  "ko": "사례, 경우",
+  "ipa": "ˈɪnstəns"
+ },
+ {
+  "en": "instructions",
+  "pos": "명",
+  "ko": "지시",
+  "ipa": "ɪnˈstrʌkʃənz"
+ },
+ {
+  "en": "insult",
+  "pos": "동",
+  "ko": "모욕하다",
+  "ipa": "ɪnˈsʌlt"
+ },
+ {
+  "en": "intelligence",
+  "pos": "명",
+  "ko": "지성, 지능",
+  "ipa": "ɪnˈtɛlədʒəns"
+ },
+ {
+  "en": "interfere",
+  "pos": "동",
+  "ko": "지장을 주다, 간섭하다",
+  "ipa": "ɪntərˈfɪr"
+ },
+ {
+  "en": "intrusion",
+  "pos": "명",
+  "ko": "불쑥 끼어듦, 방해",
+  "ipa": "ɪnˈtruʒən"
+ },
+ {
+  "en": "judicial",
+  "pos": "형",
+  "ko": "판단을 내리는",
+  "ipa": "dʒuˈdɪʃəl"
+ },
+ {
+  "en": "kindness",
+  "pos": "명",
+  "ko": "친절",
+  "ipa": "ˈkaɪndnəs"
+ },
+ {
+  "en": "labour",
+  "pos": "명",
+  "ko": "노동",
+  "ipa": "ˈleɪbər"
+ },
+ {
+  "en": "late",
+  "pos": "형",
+  "ko": "고인이 된",
+  "ipa": "ˈleɪt"
+ },
+ {
+  "en": "laughed",
+  "pos": "동",
+  "ko": "웃다(과거형)",
+  "ipa": "ˈlæft"
+ },
+ {
+  "en": "liberty",
+  "pos": "명",
+  "ko": "실례를 무릅쓴 자유",
+  "ipa": "ˈlɪbərti"
+ },
+ {
+  "en": "literature",
+  "pos": "명",
+  "ko": "문헌, 저술",
+  "ipa": "ˈlɪtərətʃər"
+ },
+ {
+  "en": "living",
+  "pos": "명",
+  "ko": "생계",
+  "ipa": "ˈlɪvɪŋ"
+ },
+ {
+  "en": "lord",
+  "pos": "명",
+  "ko": "주님, 하느님",
+  "ipa": "ˈlɔrd"
+ },
+ {
+  "en": "manual",
+  "pos": "형",
+  "ko": "손으로 하는, 육체의",
+  "ipa": "ˈmænjuəl"
+ },
+ {
+  "en": "merely",
+  "pos": "부",
+  "ko": "그저, 단지",
+  "ipa": "ˈmɪrli"
+ },
+ {
+  "en": "mind",
+  "pos": "명",
+  "ko": "정신",
+  "ipa": "ˈmaɪnd"
+ },
+ {
+  "en": "mistake",
+  "pos": "명",
+  "ko": "실수",
+  "ipa": "mɪˈsteɪk"
+ },
+ {
+  "en": "moods",
+  "pos": "명",
+  "ko": "기분, 상태",
+  "ipa": "ˈmudz"
+ },
+ {
+  "en": "mopping",
+  "pos": "동",
+  "ko": "(땀 등을) 닦다",
+  "ipa": "ˈmɑpɪŋ"
+ },
+ {
+  "en": "narrative",
+  "pos": "명",
+  "ko": "이야기, 진술",
+  "ipa": "ˈnærətɪv"
+ },
+ {
+  "en": "nominal",
+  "pos": "형",
+  "ko": "명목상의",
+  "ipa": "ˈnɑmənəl"
+ },
+ {
+  "en": "note",
+  "pos": "명",
+  "ko": "~을 적어두다",
+  "ipa": "ˈnoʊt"
+ },
+ {
+  "en": "obese",
+  "pos": "형",
+  "ko": "비만인, 뚱뚱한",
+  "ipa": "oʊˈbis"
+ },
+ {
+  "en": "obliging",
+  "pos": "형",
+  "ko": "기꺼이 돕는, 고분고분한",
+  "ipa": "əˈblaɪdʒɪŋ"
+ },
+ {
+  "en": "observed",
+  "pos": "동",
+  "ko": "말했다",
+  "ipa": "əbˈzɜrvd"
+ },
+ {
+  "en": "occasionally",
+  "pos": "부",
+  "ko": "때때로",
+  "ipa": "əˈkeɪʒənəli"
+ },
+ {
+  "en": "occupation",
+  "pos": "명",
+  "ko": "직업",
+  "ipa": "ɑkjəˈpeɪʃən"
+ },
+ {
+  "en": "occupations",
+  "pos": "명",
+  "ko": "일, 직업",
+  "ipa": "ɑkjəˈpeɪʃənz"
+ },
+ {
+  "en": "offices",
+  "pos": "명",
+  "ko": "사무실",
+  "ipa": "ˈɔfəsəz"
+ },
+ {
+  "en": "order",
+  "pos": "명",
+  "ko": "조합, 결사",
+  "ipa": "ˈɔrdər"
+ },
+ {
+  "en": "ornament",
+  "pos": "명",
+  "ko": "장식",
+  "ipa": "ˈɔrnəmənt"
+ },
+ {
+  "en": "overcoat",
+  "pos": "명",
+  "ko": "외투",
+  "ipa": "ˈoʊvərkoʊt"
+ },
+ {
+  "en": "partner",
+  "pos": "명",
+  "ko": "동료",
+  "ipa": "ˈpɑrtnər"
+ },
+ {
+  "en": "patch",
+  "pos": "명",
+  "ko": "자국, 얼룩",
+  "ipa": "ˈpætʃ"
+ },
+ {
+  "en": "pawnbroker's",
+  "pos": "명",
+  "ko": "전당포 주인",
+  "ipa": "ˈpɔnbroʊkərz"
+ },
+ {
+  "en": "peculiar",
+  "pos": "형",
+  "ko": "~에만 있는, ~특유의",
+  "ipa": "pəˈkjuljər"
+ },
+ {
+  "en": "photography",
+  "pos": "명",
+  "ko": "사진술, 사진 촬영",
+  "ipa": "fəˈtɑgrəfi"
+ },
+ {
+  "en": "piling",
+  "pos": "동",
+  "ko": "쌓아올리다",
+  "ipa": "ˈpaɪlɪŋ"
+ },
+ {
+  "en": "planted",
+  "pos": "동",
+  "ko": "(단단히) 짚다, 놓다",
+  "ipa": "ˈplæntɪd"
+ },
+ {
+  "en": "pompous",
+  "pos": "형",
+  "ko": "거들먹거리는",
+  "ipa": "ˈpɑmpəs"
+ },
+ {
+  "en": "portly",
+  "pos": "형",
+  "ko": "뚱뚱하고 풍채 좋은",
+  "ipa": "ˈpɔrtli"
+ },
+ {
+  "en": "positive",
+  "pos": "형",
+  "ko": "확실한, 명백한",
+  "ipa": "ˈpɑzətɪv"
+ },
+ {
+  "en": "presented",
+  "pos": "동",
+  "ko": "내놓다, 제시하다",
+  "ipa": "priˈzɛntɪd"
+ },
+ {
+  "en": "presume",
+  "pos": "동",
+  "ko": "(완곡하게) 짐작하다, 추측하다",
+  "ipa": "prɪˈzum"
+ },
+ {
+  "en": "pride",
+  "pos": "명",
+  "ko": "자부심, 으쓱함",
+  "ipa": "ˈpraɪd"
+ },
+ {
+  "en": "promises",
+  "pos": "동",
+  "ko": "~일 듯하다",
+  "ipa": "ˈprɑməsəz"
+ },
+ {
+  "en": "prompted",
+  "pos": "동",
+  "ko": "~하도록 부추기다",
+  "ipa": "ˈprɑmptɪd"
+ },
+ {
+  "en": "proposition",
+  "pos": "명",
+  "ko": "주장, 명제",
+  "ipa": "prɑpəˈzɪʃən"
+ },
+ {
+  "en": "purely",
+  "pos": "부",
+  "ko": "순전히",
+  "ipa": "ˈpjʊrli"
+ },
+ {
+  "en": "questioning",
+  "pos": "형",
+  "ko": "의아해하는, 캐묻는 듯한",
+  "ipa": "ˈkwɛstʃənɪŋ"
+ },
+ {
+  "en": "quietly",
+  "pos": "부",
+  "ko": "조용히",
+  "ipa": "ˈkwaɪətli"
+ },
+ {
+  "en": "rabbit",
+  "pos": "명",
+  "ko": "토끼",
+  "ipa": "ˈræbət"
+ },
+ {
+  "en": "reason",
+  "pos": "명",
+  "ko": "이성, 사고력",
+  "ipa": "ˈrizən"
+ },
+ {
+  "en": "recommence",
+  "pos": "동",
+  "ko": "다시 시작하다",
+  "ipa": "rikəˈmɛns"
+ },
+ {
+  "en": "relapsing",
+  "pos": "동",
+  "ko": "도로 몸을 파묻다",
+  "ipa": "rɪˈlæpsɪŋ"
+ },
+ {
+  "en": "relish",
+  "pos": "명",
+  "ko": "즐기는 마음, 애호",
+  "ipa": "ˈrɛlɪʃ"
+ },
+ {
+  "en": "remark",
+  "pos": "동",
+  "ko": "말하다, 언급하다",
+  "ipa": "rɪˈmɑrk"
+ },
+ {
+  "en": "remarkable",
+  "pos": "형",
+  "ko": "놀라운, 뛰어난",
+  "ipa": "rɪˈmɑrkəbəl"
+ },
+ {
+  "en": "remarked",
+  "pos": "동",
+  "ko": "말했다",
+  "ipa": "rɪˈmɑrkt"
+ },
+ {
+  "en": "reputation",
+  "pos": "명",
+  "ko": "평판, 명성",
+  "ipa": "rɛpjəˈteɪʃən"
+ },
+ {
+  "en": "rest",
+  "pos": "동",
+  "ko": "괴다, 얹어두다",
+  "ipa": "ˈrɛst"
+ },
+ {
+  "en": "roof",
+  "pos": "명",
+  "ko": "살 곳을 지키다",
+  "ipa": "ˈruf"
+ },
+ {
+  "en": "room",
+  "pos": "명",
+  "ko": "여지",
+  "ipa": "ˈrum"
+ },
+ {
+  "en": "routine",
+  "pos": "명",
+  "ko": "늘 하는 일",
+  "ipa": "ruˈtin"
+ },
+ {
+  "en": "salary",
+  "pos": "명",
+  "ko": "급여, 봉급",
+  "ipa": "ˈsæləri"
+ },
+ {
+  "en": "satisfied",
+  "pos": "형",
+  "ko": "만족한",
+  "ipa": "ˈsætəsfaɪd"
+ },
+ {
+  "en": "save",
+  "pos": "전",
+  "ko": "~을 제외하고",
+  "ipa": "ˈseɪv"
+ },
+ {
+  "en": "scales",
+  "pos": "명",
+  "ko": "비늘",
+  "ipa": "ˈskeɪlz"
+ },
+ {
+  "en": "scratch",
+  "pos": "명",
+  "ko": "맨 처음부터",
+  "ipa": "ˈskrætʃ"
+ },
+ {
+  "en": "services",
+  "pos": "명",
+  "ko": "업무, 직무",
+  "ipa": "ˈsərvəsəz"
+ },
+ {
+  "en": "settee",
+  "pos": "명",
+  "ko": "긴 소파",
+  "ipa": "sɛˈti"
+ },
+ {
+  "en": "shiny",
+  "pos": "형",
+  "ko": "반질반질한, 윤이 나는",
+  "ipa": "ˈʃaɪni"
+ },
+ {
+  "en": "shipwreck",
+  "pos": "명",
+  "ko": "난파",
+  "ipa": "ˈʃɪprɛk"
+ },
+ {
+  "en": "singular",
+  "pos": "형",
+  "ko": "기이한, 유별난",
+  "ipa": "ˈsɪŋgjələr"
+ },
+ {
+  "en": "slight",
+  "pos": "형",
+  "ko": "가벼운, 미미한",
+  "ipa": "ˈslaɪt"
+ },
+ {
+  "en": "snuff",
+  "pos": "명",
+  "ko": "코담배",
+  "ipa": "ˈsnʌf"
+ },
+ {
+  "en": "sound",
+  "pos": "형",
+  "ko": "건전한, 멀쩡한",
+  "ipa": "ˈsaʊnd"
+ },
+ {
+  "en": "spirits",
+  "pos": "명",
+  "ko": "기분이 좋은",
+  "ipa": "ˈspɪrɪts"
+ },
+ {
+  "en": "staining",
+  "pos": "동",
+  "ko": "물들이다",
+  "ipa": "ˈsteɪnɪŋ"
+ },
+ {
+  "en": "stout",
+  "pos": "형",
+  "ko": "살집이 있는, 뚱뚱한",
+  "ipa": "ˈstaʊt"
+ },
+ {
+  "en": "strict",
+  "pos": "형",
+  "ko": "엄격한",
+  "ipa": "ˈstrɪkt"
+ },
+ {
+  "en": "successful",
+  "pos": "형",
+  "ko": "성공적인",
+  "ipa": "səkˈsɛsfəl"
+ },
+ {
+  "en": "suffer",
+  "pos": "동",
+  "ko": "(안 좋은 일을) 겪다, 당하다",
+  "ipa": "ˈsʌfər"
+ },
+ {
+  "en": "sympathy",
+  "pos": "명",
+  "ko": "동질감, 공감",
+  "ipa": "ˈsɪmpəθi"
+ },
+ {
+  "en": "tattooed",
+  "pos": "동",
+  "ko": "문신을 새기다",
+  "ipa": "tæˈtud"
+ },
+ {
+  "en": "thick",
+  "pos": "형",
+  "ko": "굵은, 두꺼운",
+  "ipa": "ˈθɪk"
+ },
+ {
+  "en": "track",
+  "pos": "명",
+  "ko": "흔치 않은, 색다른",
+  "ipa": "ˈtræk"
+ },
+ {
+  "en": "tradesman",
+  "pos": "명",
+  "ko": "장사치, 상인",
+  "ipa": "ˈtreɪdzmən"
+ },
+ {
+  "en": "trick",
+  "pos": "명",
+  "ko": "수법, 요령",
+  "ipa": "ˈtrɪk"
+ },
+ {
+  "en": "trustees",
+  "pos": "명",
+  "ko": "이사, 수탁자",
+  "ipa": "trʌˈstiz"
+ },
+ {
+  "en": "turn",
+  "pos": "명",
+  "ko": "은혜를 베풀다",
+  "ipa": "ˈtərn"
+ },
+ {
+  "en": "unbuttoned",
+  "pos": "형",
+  "ko": "단추를 풀어놓은",
+  "ipa": "ənˈbʌtənd"
+ },
+ {
+  "en": "understand",
+  "pos": "동",
+  "ko": "알아듣다, 이해하다",
+  "ipa": "ʌndərˈstænd"
+ },
+ {
+  "en": "unique",
+  "pos": "형",
+  "ko": "유례없는",
+  "ipa": "juˈnik"
+ },
+ {
+  "en": "upon",
+  "pos": "전",
+  "ko": "on과 같은 뜻",
+  "ipa": "əˈpɑn"
+ },
+ {
+  "en": "utmost",
+  "pos": "형",
+  "ko": "더없이 큰, 최대의",
+  "ipa": "ˈʌtmoʊst"
+ },
+ {
+  "en": "vacancy",
+  "pos": "명",
+  "ko": "결원, 공석",
+  "ipa": "ˈveɪkənsi"
+ },
+ {
+  "en": "vice",
+  "pos": "명",
+  "ko": "나쁜 버릇, 악덕",
+  "ipa": "ˈvaɪs"
+ },
+ {
+  "en": "wages",
+  "pos": "명",
+  "ko": "급여, 임금",
+  "ipa": "ˈweɪdʒəz"
+ },
+ {
+  "en": "waistcoat",
+  "pos": "명",
+  "ko": "조끼",
+  "ipa": "ˈweɪstkoʊt"
+ },
+ {
+  "en": "whole",
+  "pos": "명",
+  "ko": "전반적으로",
+  "ipa": "ˈhoʊl"
+ },
+ {
+  "en": "widower",
+  "pos": "명",
+  "ko": "홀아비",
+  "ipa": "ˈwɪdoʊər"
+ },
+ {
+  "en": "willing",
+  "pos": "형",
+  "ko": "기꺼이 하는",
+  "ipa": "ˈwɪlɪŋ"
+ },
+ {
+  "en": "wish",
+  "pos": "동",
+  "ko": "바라다, 소원하다",
+  "ipa": "ˈwɪʃ"
+ },
+ {
+  "en": "withdraw",
+  "pos": "동",
+  "ko": "물러나다",
+  "ipa": "wɪðˈdrɔ"
+ },
+ {
+  "en": "wits",
+  "pos": "명",
+  "ko": "어쩔 줄 모르는",
+  "ipa": "ˈwɪts"
+ },
+ {
+  "en": "wonder",
+  "pos": "동",
+  "ko": "~에 놀라다",
+  "ipa": "ˈwʌndər"
+ },
+ {
+  "en": "worth",
+  "pos": "형",
+  "ko": "~의 가치가 있는",
+  "ipa": "ˈwərθ"
+ },
+ {
+  "en": "wriggled",
+  "pos": "동",
+  "ko": "몸을 꼬다, 꿈틀대다",
+  "ipa": "ˈrɪgəld"
+ },
+ {
+  "en": "wrist",
+  "pos": "명",
+  "ko": "손목",
+  "ipa": "ˈrɪst"
+ },
+ {
+  "en": "youth",
+  "pos": "명",
+  "ko": "젊은이",
+  "ipa": "ˈjuθ"
+ }
+];
