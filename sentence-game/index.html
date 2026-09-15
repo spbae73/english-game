@@ -9,8 +9,17 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>문장 완성 게임</h1>
-    <p class="byline">뼈대만 남기고 나머지는 빈칸! 빈칸을 고르고, 맞는 단어를 골라 채워보세요.</p>
+    <div class="head-top">
+      <div>
+        <h1>문장 완성 게임</h1>
+        <p class="byline">뼈대만 남기고 나머지는 빈칸! 빈칸을 고르고, 맞는 단어를 골라 채워보세요.</p>
+      </div>
+      <div class="font-ctrl" role="group" aria-label="글자 크기 조절">
+        <button id="fontDec" type="button" title="글자 작게 (A−)" aria-label="글자 작게">A−</button>
+        <button id="fontReset" type="button" title="기본 크기 복원 (100%)" aria-label="기본 크기 복원">100%</button>
+        <button id="fontInc" type="button" title="글자 크게 (A+)" aria-label="글자 크게">A+</button>
+      </div>
+    </div>
   </header>
 
   <div id="setup" class="card hidden">
@@ -30,8 +39,8 @@
   <div id="game" class="hidden"></div>
 
   <p class="foot">빈칸을 누르면 선택되고, 아래 단어를 누르면 그 자리에 맞는지 확인합니다.<br>
-  채운 칸을 다시 누르면 되돌릴 수 있습니다. 읽기 페이지에서 읽은 대목까지만 출제되고,
-  진행 상황과 난이도는 이 브라우저에 저장됩니다.</p>
+  채운 칸을 다시 누르면 되돌릴 수 있습니다. 읽기 페이지에서 읽은 대목까지만 출제되고,<br>
+  진행 상황, 난이도, 글자 크기는 이 브라우저에 저장됩니다.</p>
 </div>
 
 <script src="../word-game/words.js"></script>

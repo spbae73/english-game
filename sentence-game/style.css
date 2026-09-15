@@ -12,6 +12,17 @@ body{
 }
 .wrap{max-width:34rem; margin:0 auto; padding:1.5rem 1.25rem 4rem}
 header{border-bottom:1px solid var(--rule); padding-bottom:.9rem; margin-bottom:1.25rem}
+.head-top{display:flex; justify-content:space-between; align-items:flex-start; gap:.8rem; flex-wrap:wrap}
+.font-ctrl{display:inline-flex; align-items:center; border:1px solid var(--rule); border-radius:999px; padding:2px; background:#fff; user-select:none; flex-shrink:0}
+.font-ctrl button{
+  font-family:var(--ui); font-size:.78rem; font-weight:500; padding:.25rem .55rem; cursor:pointer;
+  background:none; border:none; border-radius:999px; color:var(--muted); line-height:1.2;
+  transition:all .15s ease;
+}
+.font-ctrl button:hover:not(:disabled){color:var(--ink); background:#f2f1ec}
+.font-ctrl button:active:not(:disabled){background:var(--accent-bg); color:var(--accent)}
+.font-ctrl button:disabled{opacity:.35; cursor:default}
+.font-ctrl #fontReset{font-variant-numeric:tabular-nums; font-size:.72rem; min-width:2.9rem; text-align:center; padding:.25rem .3rem}
 h1{font-family:var(--read); font-size:1.4rem; font-weight:600; margin:0 0 .15rem; letter-spacing:-.01em}
 .byline{font-size:.8rem; color:var(--muted); margin:0}
 .hidden{display:none !important}

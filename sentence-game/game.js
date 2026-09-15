@@ -16,6 +16,36 @@ try{
 }catch(e){}
 function save(){try{localStorage.setItem('rhl_sentgame', JSON.stringify({idx:st.idx, done:st.done, diff:st.diff}))}catch(e){}}
 
+/* ---------- 글자 크기 조절 (80% ~ 180%, 10% 단위) ---------- */
+var FS_KEY = 'rhl_fs', fontScale = 100;
+try {
+  var savedFs = localStorage.getItem(FS_KEY);
+  if (savedFs) {
+    var parsed = parseInt(savedFs, 10);
+    if (!isNaN(parsed) && parsed >= 80 && parsed <= 180) fontScale = parsed;
+  }
+} catch(e) {}
+
+function applyFontSize(fs) {
+  fontScale = fs;
+  document.documentElement.style.fontSize = fontScale + '%';
+  var resetBtn = document.getElementById('fontReset');
+  var decBtn = document.getElementById('fontDec');
+  var incBtn = document.getElementById('fontInc');
+  if (resetBtn) resetBtn.textContent = fontScale + '%';
+  if (decBtn) decBtn.disabled = (fontScale <= 80);
+  if (incBtn) incBtn.disabled = (fontScale >= 180);
+  try { localStorage.setItem(FS_KEY, String(fontScale)); } catch(e) {}
+}
+
+var fontDecEl = document.getElementById('fontDec');
+var fontIncEl = document.getElementById('fontInc');
+var fontResetEl = document.getElementById('fontReset');
+if (fontDecEl) fontDecEl.onclick = function() { applyFontSize(Math.max(80, fontScale - 10)); };
+if (fontIncEl) fontIncEl.onclick = function() { applyFontSize(Math.min(180, fontScale + 10)); };
+if (fontResetEl) fontResetEl.onclick = function() { applyFontSize(100); };
+applyFontSize(fontScale);
+
 var DIFF_PCT={base:0, d30:0.3, d50:0.5};
 
 /* ---------- red-headed-league.html과 동일한 뼈대 정렬 로직 ---------- */

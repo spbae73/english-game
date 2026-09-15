@@ -9,8 +9,17 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>단어 매칭 게임</h1>
-    <p class="byline">The Red-Headed League 단어장 · <span id="wcount"></span>개 단어</p>
+    <div class="head-top">
+      <div>
+        <h1>단어 매칭 게임</h1>
+        <p class="byline">The Red-Headed League 단어장 · <span id="wcount"></span>개 단어</p>
+      </div>
+      <div class="font-ctrl" role="group" aria-label="글자 크기 조절">
+        <button id="fontDec" type="button" title="글자 작게 (A−)" aria-label="글자 작게">A−</button>
+        <button id="fontReset" type="button" title="기본 크기 복원 (100%)" aria-label="기본 크기 복원">100%</button>
+        <button id="fontInc" type="button" title="글자 크게 (A+)" aria-label="글자 크게">A+</button>
+      </div>
+    </div>
   </header>
 
   <div id="setup" class="card">
@@ -40,7 +49,7 @@
     <button class="full ghost" id="toSetup">쌍 수 다시 고르기</button>
   </div>
 
-  <p class="foot">기록은 이 브라우저에 저장됩니다.<br>새 대목이 추가되면 단어도 자동으로 늘어납니다.</p>
+  <p class="foot">기록과 글자 크기는 이 브라우저에 저장됩니다.<br>새 대목이 추가되면 단어도 자동으로 늘어납니다.</p>
 </div>
 
 <script src="words.js"></script>

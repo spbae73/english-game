@@ -20,7 +20,18 @@ body{
 header{border-bottom:1px solid var(--rule); padding-bottom:.9rem; margin-bottom:1.25rem}
 h1{font-family:var(--read); font-size:1.45rem; font-weight:600; margin:0 0 .15rem; letter-spacing:-.01em}
 .byline{font-size:.8rem; color:var(--muted); margin:0}
-nav{display:flex; gap:.4rem; margin-top:.9rem}
+.head-top{display:flex; justify-content:space-between; align-items:flex-start; gap:.8rem; flex-wrap:wrap}
+.font-ctrl{display:inline-flex; align-items:center; border:1px solid var(--rule); border-radius:999px; padding:2px; background:#fff; user-select:none; flex-shrink:0}
+.font-ctrl button{
+  font-family:var(--ui); font-size:.78rem; font-weight:500; padding:.25rem .55rem; cursor:pointer;
+  background:none; border:none; border-radius:999px; color:var(--muted); line-height:1.2;
+  transition:all .15s ease;
+}
+.font-ctrl button:hover:not(:disabled){color:var(--ink); background:#f2f1ec}
+.font-ctrl button:active:not(:disabled){background:var(--accent-bg); color:var(--accent)}
+.font-ctrl button:disabled{opacity:.35; cursor:default}
+.font-ctrl #fontReset{font-variant-numeric:tabular-nums; font-size:.72rem; min-width:2.9rem; text-align:center; padding:.25rem .3rem}
+nav{display:flex; gap:.4rem; margin-top:.9rem; flex-wrap:wrap; row-gap:.4rem}
 nav button{
   font-family:var(--ui); font-size:.8rem; padding:.35rem .8rem; cursor:pointer;
   background:none; border:1px solid var(--rule); border-radius:999px; color:var(--muted);
@@ -84,8 +95,17 @@ nav a.game{
 <body>
 <div class="wrap">
 <header>
-  <h1>The Red-Headed League</h1>
-  <p class="byline">Arthur Conan Doyle · 1891</p>
+  <div class="head-top">
+    <div>
+      <h1>The Red-Headed League</h1>
+      <p class="byline">Arthur Conan Doyle · 1891</p>
+    </div>
+    <div class="font-ctrl" role="group" aria-label="글자 크기 조절">
+      <button id="fontDec" type="button" title="글자 작게 (A−)" aria-label="글자 작게">A−</button>
+      <button id="fontReset" type="button" title="기본 크기 복원 (100%)" aria-label="기본 크기 복원">100%</button>
+      <button id="fontInc" type="button" title="글자 크게 (A+)" aria-label="글자 크게">A+</button>
+    </div>
+  </div>
   <nav>
     <button id="tabRead" aria-selected="true">읽기</button>
     <button id="tabSkel" aria-selected="false">뼈대</button>
@@ -95,7 +115,7 @@ nav a.game{
   </nav>
 </header>
 <main id="view"></main>
-<p class="foot">읽던 위치는 이 브라우저에 저장됩니다.<br>뼈대 탭은 읽기 탭에서 보고 있는 대목만 보여줍니다.<br>복습 탭은 읽은 대목에서만 나옵니다.<br>단어 게임·문장 완성 게임은 새 탭에서 열립니다.</p>
+<p class="foot">읽던 위치와 글자 크기는 이 브라우저에 저장됩니다.<br>뼈대 탭은 읽기 탭에서 보고 있는 대목만 보여줍니다.<br>복습 탭은 읽은 대목에서만 나옵니다.<br>단어 게임·문장 완성 게임은 새 탭에서 열립니다.</p>
 </div>
 
 <script id="data" type="application/json">
@@ -2398,6 +2418,36 @@ var tabRead=document.getElementById('tabRead'), tabSkel=document.getElementById(
 var st={p:0,seen:0,tab:'read'};
 try{var raw=localStorage.getItem('rhl');if(raw){var o=JSON.parse(raw);st.p=o.p||0;st.seen=o.seen||0}}catch(e){}
 function save(){try{localStorage.setItem('rhl',JSON.stringify({p:st.p,seen:st.seen}))}catch(e){}}
+
+/* ---------- 글자 크기 조절 (80% ~ 180%, 10% 단위) ---------- */
+var FS_KEY='rhl_fs', fontScale=100;
+try{
+  var savedFs=localStorage.getItem(FS_KEY);
+  if(savedFs){
+    var parsed=parseInt(savedFs,10);
+    if(!isNaN(parsed)&&parsed>=80&&parsed<=180)fontScale=parsed;
+  }
+}catch(e){}
+
+function applyFontSize(fs){
+  fontScale=fs;
+  document.documentElement.style.fontSize=fontScale+'%';
+  var resetBtn=document.getElementById('fontReset');
+  var decBtn=document.getElementById('fontDec');
+  var incBtn=document.getElementById('fontInc');
+  if(resetBtn)resetBtn.textContent=fontScale+'%';
+  if(decBtn)decBtn.disabled=(fontScale<=80);
+  if(incBtn)incBtn.disabled=(fontScale>=180);
+  try{localStorage.setItem(FS_KEY,String(fontScale))}catch(e){}
+}
+
+var fontDecEl=document.getElementById('fontDec');
+var fontIncEl=document.getElementById('fontInc');
+var fontResetEl=document.getElementById('fontReset');
+if(fontDecEl)fontDecEl.onclick=function(){applyFontSize(Math.max(80,fontScale-10))};
+if(fontIncEl)fontIncEl.onclick=function(){applyFontSize(Math.min(180,fontScale+10))};
+if(fontResetEl)fontResetEl.onclick=function(){applyFontSize(100)};
+applyFontSize(fontScale);
 
 function cw(w){return w.replace(/[^A-Za-z'-]/g,'').toLowerCase()}
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
